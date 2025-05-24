@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Trắc Nghiệm - Đọc và Giải thích</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1 class="section-title">II. Look at the text in each question. What does it say?</h1>
+        <p class="instruction">Circle the letter next to the correct explanation. (A, B, C or D).</p>
+
+        <div id="quiz-content">
+            </div>
+
+        <div class="navigation-buttons">
+            <button id="prevBtn" class="nav-btn" onclick="changeQuestion(-1)" disabled>Câu trước</button>
+            <span id="question-indicator">Câu 1 / ?</span>
+            <button id="nextBtn" class="nav-btn" onclick="changeQuestion(1)">Câu tiếp</button>
+        </div>
+
+        <button type="button" class="submit-btn" onclick="checkAllAnswers()">Xem kết quả cuối cùng</button>
+
+        <div id="quizResult" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
